@@ -1,1 +1,101 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Tanmay Kumar Mandal | About me</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<!-- <link type="text/css" rel="stylesheet" href="stylesheet.css"/> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="MyWebsiteScript.js"></script>
+		<link rel="stylesheet" href="MyStyleSheet.css" />
+	</head>
+	
+	<body >
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<!---logo-->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a class="navbar-brand" style="font-weight: bold">Tanmay Kumar Mandal</a>
+				</div>
+
+				
+
+				<!--menu Item here-->
+				<div class="collapse navbar-collapse" id="mainNavBar">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="index.html" style="font-weight: bold">About Me</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" 
+							          role="button" aria-haspopup="true" aria-expanded="false" style="font-weight: bold">Curriculum Vitae<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="https://drive.google.com/file/d/0B0OFsDRporl-N3lIX19OZkFLRlk/view?usp=sharing" target="_blank" style="font-weight: bold">CV</a></li>
+								<li><a href="https://drive.google.com/file/d/0B0OFsDRporl-bkZkX2tYN1ZqSzQ/view?usp=sharing" target="_blank" style="font-weight: bold">Resume</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="projects.html" style="font-weight: bold">Projects</a>
+						</li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="contact.html" style="font-weight: bold">Contact</a>
+						</li>
+						<li id="linkedIn">
+							<a href="https://in.linkedin.com/in/tanmay-mandal-20082668" target="_blank"><img src="linkedin.png" width="22px"/></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+			<!--Main Page-->
+		<div id="content_wrapper">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-3 col-sm-3 col-lg-2 col-xs-12" id="ImageContainer" style="padding-bottom: 2em">
+						<img src="WithOri2.jpg" width="300" id="SelfImage" alt="pic" class="img-responsive center-block" style="position: fi"/>
+					</div>
+					<div class="col-md-8 col-sm-8 col-lg-9 col-xs-12" id="Intro">
+						<p>
+							Currently, I am a Ph.D. candidate in Aerospace Engineering at <a href="http://mae.statler.wvu.edu/">West Vriginia University (WVU)</a>, USA where I
+							work in the Interactive Robotics Laboratory (<a href="http://www2.statler.wvu.edu/~irl/">IRL</a>) with <a href="http://www2.statler.wvu.edu/~irl/page18.html">
+							Dr. Yu Gu</a>. Before joining WVU I finished my Dual Degree (B.Tech and M.Tech) in Aerospace Engineering from the Indian Institute of Technology (IIT) Kharagpur, INDIA. 
+							I enjoy working on difficult problems and my research interests include autonomous robotics, human-robot interaction, guidance, control, navigation, sensor fusion, state estimation, and machine learning. 
+							Following my graduation in August of 2016, I want to continue researching ways to make intelligent robots perform complex tasks in uncertain and dynamic environments. I hope to find internship 
+							opportunities between May-July 2016 and job opportunities in robotics beginning in August 2016.
+							
+						</p>
+						<br id="parabreakline"/>
+						
+						<p>
+							My Ph.D. work primarily involves mathematically modeling the human pilot and estimating human pilot model parameters in real time
+							to predict closed loop system instability. The research requires in-depth knowldege of control theory, estimation techniques (Unscented Kalman Filter 
+							and Particle Filter), optimization techniques and a general overview of chaos theory, information theory, human physiology, and evolution of learning 
+							in humans. As a part of my research I lead a group of three undergraduate students and one master's student for developing and flight testing Pilot Research Aircraft (PIRAT) 
+							in IRL. Humans are incredible controllers, planners and decision makers and knowledge drived from such research can help in developing better robots and improve 
+							human robot interaction.														
+						</p>
+						<br id="parabreakline"/>
+						
+						<p>
+							When I am not busy doing research, I like hiking with my dog, solving Rubik's cubes, and tinkering and building robots. I am also learning to fly remote controlled aircrafts, and consequently then repairing them afterwards.
+							The fastest and easiest way of contacting me is via email, please send me an email at <img src="email.png" width="200" id="email" /> if you have any questions or need any extra
+							information.
+						</p>
+					
+					</div>
+				</div>				
+			</div>
+		</div>			
+	</body>
+</html>

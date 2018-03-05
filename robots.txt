@@ -1,0 +1,4 @@
+user-agent: *
+disallow:
+
+SITEMAP:http://www.tmandal.com/MySitemap.xml

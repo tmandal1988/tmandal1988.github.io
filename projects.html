@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Tanmay Kumar Mandal | Projects</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+		<script src="MyWebsiteScript.js"></script>
+		<link rel="stylesheet" href="MyStyleSheet.css" />
+	</head>
+
+	<body>
+		<nav class="navbar navbar-inverse  navbar-fixed-top">
+			<div class="container-fluid">
+				<!---logo-->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+						<span class="icon-bar"> </span>
+					</button>
+					<a class="navbar-brand" style="font-weight: bold">Tanmay Kumar Mandal</a>
+				</div>
+
+				<!--menu Item here-->
+				<div class="collapse navbar-collapse" id="mainNavBar">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="index.html" style="font-weight: bold">About Me</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							role="button" aria-haspopup="true" aria-expanded="false" style="font-weight: bold">Curriculum Vitae<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="https://drive.google.com/file/d/0B0OFsDRporl-N3lIX19OZkFLRlk/view?usp=sharing" target="_blank" style="font-weight: bold">CV</a>
+								</li>
+								<li>
+									<a href="https://drive.google.com/file/d/0B0OFsDRporl-bkZkX2tYN1ZqSzQ/view?usp=sharing" target="_blank" style="font-weight: bold">Resume</a>
+								</li>
+							</ul>
+						</li>
+						<li class="active dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"
+							role="button" aria-haspopup="true" aria-expanded="false" style="font-weight: bold">Projects<span class="caret"></span></a>
+							<ul class="dropdown-menu project-menu">
+								<li>
+									<a href="#Pilot" style="font-weight: bold" class="sidebarlink">Human Pilot Research</a>
+								</li>
+								<li>
+									<a href="#PIRAT" style="font-weight: bold">Pilot Research Aircraft</a>
+								</li>
+								<li>
+									<a href="#SAMPLE" style="font-weight: bold">NASA Centennial
+									<p id="menupar">
+										(Sample Return Robot) Challenge
+									</p></a>
+								</li>
+								<li>
+									<a href="#Quad" style="font-weight: bold">Quadrotor</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="contact.html" style="font-weight: bold">Contact</a>
+						</li>
+						<li id="linkedIn">
+							<a href="https://in.linkedin.com/in/tanmay-mandal-20082668" target="_blank"><img src="linkedin.png" width="22px"/></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container-fluid" id="ProjectContent" >
+			<!--	<div id="sidebar" class="sidebar-offcanvas">
+			<div class="col-md-12">
+			<ul class="nav nav-pills nav-stacked">
+			<li style="text-align: center; font-weight: bold;font-size: large">
+			Page Contents
+			</li>
+			<li>
+			<a href="#Pilot" style="font-weight: bold;color: inherit" class="sidebarlink">Human Pilot Research</a>
+			</li>
+			<li style="text-align: center">
+			<a href="#PIRAT" style="font-weight: bold;color: inherit">Pilot Research Aircraft</a>
+			</li>
+			<li>
+			<a href="#SAMPLE" style="font-weight: bold;color: inherit">NASA Centennial (Sample Return Robot) Challenge</a>
+			</li>
+			<li>
+			<a href="#Quad" style="font-weight: bold;color: inherit">Quadrotor</a>
+			</li>
+			</ul>
+			</div>
+			</div> -->
+
+			<div class="row" >
+				<div class="col-md-12 col-lg-12">
+					<h2 style="font-weight: bold" ><span id="Pilot"></span>Human Pilot Research</h2>
+					<h3 style="font-style: italic">Sponsor: NASA Langley Research Center, NASA Aviation Safety Program (AvSP), Vehicle
+					Systems Safety Technologies (VSST) Project. <img src="nasameatball.jpg" id="NASAlogo"/></h3>
+					<p>
+						The objective of the project is to develop information fusion based tools for real-time monitoring and prediction
+						of the Pilot Vehicle System (PVS) closed-loop stability. Modern aircraft systems have a highly complex closed-loop
+						starting from sensors, signal processing, displaying and cueing, human pilot, flight control, signal distribution,
+						to actuators, which finally control the aircraft. Current aviation safety research has emphasized the modeling aspect
+						of individual sub-systems within this link. However, a time-varying pilot control model is needed for deriving the
+						closed-loop PVS describing function. This would in turn help us to evaluate PVS stability margins, to predict unsafe
+						flight conditions, and to develop mitigation approaches. Additionally, an improved understanding of low-level human
+						control strategies will help us to better evaluate the impact of new technologies, such as adaptive sensing and control
+						algorithms, on the safety of future aircraft systems.
+					</p>
+
+					<p>
+						Estimation technique based on Unscented Kalman Filter has been developed to estimate the parameters of the pilot model online for single input single output
+						paradigm (pitch control of an aircraft). The goal is to show that estimator is robust for linear modelling errors and small non-linearity and that the estimator
+						is able to correctly predict the frequency characteristics of the PVS to calculate stability margins.
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<figure>
+						<img src="EstResult.png" width="100%"/>
+						<figcaption id="figcap">
+							Estimation results with no modeling errors.
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-6">
+					<figure>
+						<img src="bodebundlekbytsplus1.png" width="100%"/>
+						<figcaption id="figcap">
+							Comparison of frequency characteristics between true and estimated PVS under linear modeling errors.
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<figure>
+						<img src="pprealdata2.png" width="100%"/>
+						<figcaption id="figcap">
+							Estimator applied to real flight data.
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+
+					<p>
+						For large non-linear error and application domain an estimator based on particle filter is being developed. Particle filter is computationally
+						expensive but can better take care of non-linearity. It can still provide a proof of concept for online pilot model parameter estimation for complex conditions. This research work
+						has inspired me even more to ask questions such as how one can make autonomous robots which are flexible, robust, adaptive, and capable of solving various kinds of problem at the same time?
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<h2 style="font-weight: bold" ><span id="PIRAT"></span>Pilot Research Aircraft (PIRAT)</h2>
+					<p>
+						PIRAT is an off-the-shelf remotely controlled sub-scale aircraft,
+						which has been modified to carry out various experiments involving human pilot. Being a
+						mass produced off-the-shelf platform, PIRAT is inexpensive and easily replaceable. Using unmanned aircraft does have the disadvantage of not being able to
+						provide motion cues to the pilot on the ground. However use of unmanned aircraft provides the flexibility
+						to carry out dangerous flight tests without putting human life in danger and in a cost effective way. Also since
+						human pilot uses only vision feedback to fly the aircraft, it resembles the single input single output system used in
+						human pilot research.
+					</p>
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-6">
+					<figure>
+						<img src="PIRATsystem.png" width="100%"/>
+						<figcaption id="figcap">
+							PIRAT system overview.
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<p>
+						PIRAT is equipped with Gen-VI avionics developed at Interactive Robotics Laboratory at West Virginia University.
+						Gen-VI avionics consists of a Netburner&copy; MOD54415
+						32-bit 250 MHz microcontroller. It has 64MB DDR2 RAM and 32MB flash which enables the designer to run basic flight test algorithms
+						(such as time delay injection in pilot command and actuator rate limiting) along with low level
+						tasks such as gathering sensor data and controlling servos. Gen VI avionics also has a PC104 form factor
+						computer to run real time linux for RTAI flight programs. In terms of major sensors Gen-VI consists of an
+						Analog Devices&copy; ADIS16485 Inertial Measurement Unit (IMU) for measuring 3-axis accelerations and angular rates. A Specktrun&copy; AR12120 R/C flight control
+						receiver to receive and record pilot command, and a Novatel&copy; OEMV-1 GPS module. Gen-VI avionics can operate in manual, fully autonomous or Pilot-In-The-Loop
+						mode of flight making PIRAT a versatile platform for various types of research.
+					</p>
+
+					<p>
+						I lead a group of three undergraduate students and one master's student for developing and flight testing Pilot Research Aircraft (PIRAT). Firmware for Gen-VI avionics
+						can be obtained from <a href="https://github.com/tmandal1988/Code_Workspace/tree/master/GenVI_v2.0" target="_blank"> my github repo</a>.
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<h2 style="font-weight: bold" ><span id="SAMPLE"></span>NASA Centennial (Sample Return Robot) Challenge</h2>
+					<p>
+						The main idea of <a href="http://wp.wpi.edu/challenge/" target="_blank">Sample Return Robot (SRR) Challenge</a> was to encourage innovators to build fully-autonomous robots that can find, retrieve, and return samples
+						in a large (~80,000m<sup style="font-weight: bold">2</sup>) complex environment without relying on Earth based technologies (e.g. GPS or magnetometer). The challenge has two levels: $5,000 Level-1
+						Challenge for picking up one sample and up to $1.5M Level-2 Challenge for picking up (up to) 10 different samples. Only teams that completed Level-1 Challenge
+						will be eligible for the second level.
+					</p>
+					<h4 style="font-weight: bold"> Year 2014</h4>
+					<p>
+						We (Team Mountaineers) became the only team that completed Level-1 Challenge in 2014 (<a href="http://www.nasa.gov/centennial_challenges/sample_return_robot/srr-2014-wrapup.html" target="_blank">NASA press release</a>, <a
+						href="https://www.youtube.com/watch?v=PX2EiV3JHVE" target="_blank">NASA 360 TV</a>)! Our story from Year 2014 can be found <a href="http://www2.statler.wvu.edu/~irl/page29.html" target="_blank">here</a>. As a part of the firmware
+						team I developed codes for Netburner&copy; modules for multiple sensor data collection with emphasis on fault tolerant and synchronization built in. I also developed the firmware for the grabber mechanisam of the robot for sample collection.
+					</p><h4 style="font-weight: bold">Year 2015</h4>
+					<p>
+						After another year of hard work, we completed Level-2 Challenge in 2015 ( <a href="http://www.nasa.gov/press-release/nasa-awards-100000-to-winning-team-of-robot-challenge" target="_blank">NASA press release</a>)
+						and brought home a $100,000 prize! Our story from Year 2015 can be found <a href="http://www2.statler.wvu.edu/~irl/page35.html" target="_blank">here</a>. As a part of the firmware team
+						I helped develop general fimware for the robot such as UDP communication and range measurements using Time Doman&copy; <a href="http://www.timedomain.com/products/pulson-440/" target="_blank">ranging radio</a>.
+					</p>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 col-lg-3">
+					<figure>
+						<img src="cata2014.jpg" width="300" class="CatImgSize"/>
+						<figcaption id="figcap">
+							Cataglyphis : 2014 (Photo:WVU IRL).
+						</figcaption>
+					</figure>
+				</div>
+				<div class="col-md-4 col-lg-3" id="Cat2015img">
+					<figure>
+						<img src="cata2015.jpg" width="300" class="CatImgSize"/>
+						<figcaption id="figcap">
+							Cataglyphis : 2015 (Photo:WVU IRL).
+						</figcaption>
+					</figure>
+				</div>
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-12 col-lg-12">
+					<h2 style="font-weight: bold"><span id="Quad"></span>Quadrotor</h2>
+					<p>
+						Autonomous navigation in an unstructured environment, as an essential requirement for applications such as search and rescue
+						or exploration of planetary surfaces, has long been a challenging research topic in the robotics community. Within this project,
+						quadrotor platforms were developed (due to ease of flight testing and rapid prototyping) to test various navigation, sensor fusion, path planning,
+						and flight control techniques in unstructured and GPS degraded environment. I was responsible for developing firmware for attitude and position control
+						and sensor fusion and as a part of the research I helped in the research with path-planning, navigation, and flight testing.
+					</p>
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 col-xs-12 video-container">
+					<iframe class="quadvideo" width="640" height="360" src="https://www.youtube.com/embed/dwjD74xXvLc?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-4 col-xs-12 video-container">
+					<iframe class="quadvideo" width="640" height="360" src="https://www.youtube.com/embed/G1_RC4Aloo8?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-4 col-xs-12 video-container">
+					<iframe class="quadvideo" width="640" height="360" src="https://www.youtube.com/embed/a29AAra1R1k?feature=player_embedded" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+
+		</div><!--/row-offcanvas -->
+	</body>
+</html>
+
